@@ -1,7 +1,20 @@
+version: "3"
+
+networks:
+    local:
+        driver: bridge
+
 services:
-  server:
+  part_5:
     build: ./part_5
-  proxy:
+    image: image_5:1.0
+    container_name: con_5
+
+  part_6:
     build: ./part_6
+    image: image_6:1.0
+    container_name: con_6
     ports:
-      - 80:8080
+      - "80:8080"
+    depends_on: 
+      - part_5

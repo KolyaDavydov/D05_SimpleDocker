@@ -266,3 +266,28 @@
 <i> после исправления</i>
 
 </div>
+
+## Part VI
+
+второй контейнер собирается из папки `part_6`
+создаем образы `docker-compose build`:
+
+<div align="center">
+
+![](img/6.1.docker-compose_build.png)
+<br>
+<i> docker-compose build</i>
+
+</div>
+
+создаем контейнеры на базе данных образов
+`docker-compose up -d` 
+и проверяем `curl localhost:80`
+
+<div align="center">
+
+![](img/6.2.docker-compose_up.png)
+<br>
+<i> docker-compose up -d</i>
+
+</div>
